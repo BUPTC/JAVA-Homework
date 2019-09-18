@@ -1,7 +1,7 @@
 /*
-Editor:Chen Yihao
+Author:Chen Yihao
 Date:2019/9/15
-Content:Calculate future Investment Value(¼ÆËãÎ´À´Í¶×ÊÖµ)
+Content:Calculate future Investment Value(è®¡ç®—æœªæ¥æŠ•èµ„å€¼)
 */
 
 package ch01.Exer1_3;
@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class CalInvest{
 	public static void main(String args[]){
-		System.out.println("ÇëÊäÈëÍ¶×Ê×Ü¶î¡¢ÄêÀûÂÊºÍÄêÊı");
+		System.out.println("è¯·è¾“å…¥æŠ•èµ„æ€»é¢ã€å¹´åˆ©ç‡å’Œå¹´æ•°");
 		Scanner sc=new Scanner(System.in);
 		double SumValue=sc.nextFloat();
 		double Rate=sc.nextFloat();
@@ -17,6 +17,6 @@ public class CalInvest{
 		
 		sc.close();
 		double Future=SumValue*(Math.pow(1+Rate/12,Years*12));
-		System.out.println(Future);
+		System.out.println("æœªæ¥æŠ•èµ„é‡‘é¢ä¸ºï¼š"+Future);
 	}
 }
