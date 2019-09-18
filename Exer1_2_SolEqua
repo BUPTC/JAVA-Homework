@@ -1,11 +1,10 @@
 /*
-Editor:Chen Yihao
+Author:Chen Yihao
 Date:2019/9/15
 Content:Solving linear equations by using Cramer rules(使用克拉默法则求解二元一次线性方程组）
 */
 
-//import java.io.*;
-package ch01.Exer1_3;
+package ch01.Exer1_2;
 import java.util.Scanner;
 
 public class SolEqua{
