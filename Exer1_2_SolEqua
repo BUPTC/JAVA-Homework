@@ -1,0 +1,36 @@
+/*
+Editor:Chen Yihao
+Date:2019/9/15
+Content:Solving linear equations by using Cramer rules(使用克拉默法则求解二元一次线性方程组）
+*/
+
+//import java.io.*;
+package ch01.Exer1_3;
+import java.util.Scanner;
+
+public class SolEqua{
+	public static void main(String args[])
+	{		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.print("您求解的方程组形式为:");
+		System.out.println("ax+by=e;cx+dy=f");
+		System.out.println("请输入a,b,c,d,e,f");
+		
+		String[] str=sc.nextLine().split(" ");
+		
+		sc.close();
+		
+		float[] num=new float[str.length];
+		for(int i=0;i<str.length;i++)
+		{	
+			num[i]=Float.parseFloat(String.valueOf(str[i]));
+		}
+		
+		float den=num[0]*num[3]-num[1]*num[2];
+		float x=(num[4]*num[3]-num[1]*num[5])/den;
+		float y=(num[0]*num[5]-num[4]*num[2])/den;
+		
+		System.out.println("方程组的解为:x="+x + ",y="+y);
+	}
+}
